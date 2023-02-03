@@ -15,7 +15,7 @@ a {
     .header_nav {
         display: flex;
         width: 25%;
-        margin-right: 77px;
+        padding-right: 77px;
     }
 
         #heb {  
@@ -48,7 +48,7 @@ a {
     .logo {
         width: 62px;
         height: 19px;
-        margin: 44px 0px 0px 55px;
+        padding: 44px 0px 0px 55px;
     }
 
 
