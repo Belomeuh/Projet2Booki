@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", initial-scale="1.0">
 		<title>Booki</title>
-		<script src="https://kit.fontawesome.com/17406d634c.js" crossorigin="anonymous"></script>
-		<style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	</head>
 
 <!--Corps page-->
@@ -22,8 +22,29 @@
 		</div>
 	</div>
 	</nav>
-<!--Fin de l'Entête-->	
-
 	</header>
+<!--Fin de l'entête-->
+	<main>
+<!--Slogan + barre de recherche-->
+		<div class="slogan">
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p>En plein centre ville ou en pleine nature</p>
+		</div>
+		<form id="research">
+			<div class="container_research">
+				<div id="icon_dot">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+				<input type="search" value="Marseille, France">
+			</div>
+			<div class="container_button">
+				<button class="button_desk" type="submit">Rechercher</button>
+				<button class="button_mobile" type="submit">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
+		</form>	
+<!--Fin slogan + barre de recherche-->
+	</main>
 </body>
 </html>	

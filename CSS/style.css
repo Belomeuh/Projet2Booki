@@ -1,5 +1,7 @@
 body {
     font-family: "Raleway", sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
@@ -52,5 +54,71 @@ a {
     }
 
 
+.slogan {
+    margin-left: 55px;
+    margin-top: 59px;
+}
 
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
 
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#research {
+    display: flex;
+    height: 49px;
+    margin-left: 55px;
+}
+
+.container_research {
+    display: flex;
+}
+
+.container_research input[type='search']{
+    width: 332px;
+    height: 49px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+}
+
+#icon_dot {
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.container_button{
+    position: relative;
+    right: 15px;  
+    border-radius: 10px;
+}
+
+.button_desk{
+    width: 132;
+    height: 49;
+    padding: 15px 16px 15px 16px;
+    background-color: #0065FC;
+    border: 1px solid ;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    color: white;
+    border-color: #0065FC;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button_mobile{
+    display: none;
+}
