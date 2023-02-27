@@ -10,6 +10,20 @@ body {
     padding-right: 50px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 28%;
+    height: 100%;
+    justify-content: space-between;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -21,48 +35,34 @@ img {
 }
 
 /*Entête*/
-.header {
-    display: flex;
-    justify-content: space-between;
-    height: 65px;
-}
 
-.header_nav {
-    display: flex;
-    width: 25%;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.header_nav ul {
+nav ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header_nav li:hover {
+nav ul li{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+
+nav li:hover {
     border-top: #0065FC 2px solid;
     color: #0065FC;
     font-weight: 500;
 }
 
-.header_nav_link {
-    width: 162px;
-}
-
-#heb {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: 400;
-}
-
-#act {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: 400;
-}
 
 #act:hover {
     color: #0065FC;
@@ -78,15 +78,8 @@ img {
     display: flex;
 }
 
-.booki_logo {
-    display: flex;
-    align-items: flex-end;
-}
 
 /*Slogan+recherche*/
-.slogan {
-    margin-top: 63px;
-}
 
 h1 {
     font-size: 22px;
@@ -111,7 +104,7 @@ p {
 }
 
 .container_research input[type='search'] {
-    width: 236px;
+    width: 245px;
     height: 49px;
     padding: 20px;
     font-size: 18px;
@@ -157,9 +150,10 @@ p {
 
 /*Filtres+info*/
 .filters {
-    margin: 32px 414px 0px 12px;
+    margin: 32px 0px 0px 12px;
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 
 h2 {
@@ -179,12 +173,12 @@ ul {
     height: 45px;
     display: flex;
     align-items: center;
-    padding: 0px 20px 0px 10px;
+    padding: 0px 19px 0px 10px;
 }
 
 .filters ul {
     display: flex;
-    justify-content: space-evenly;
+    gap: 30px;
     width: 100%;
     font-weight: 700;
     font-size: 17px;
@@ -205,7 +199,7 @@ ul {
 .info {
     display: flex;
     align-items: center;
-    margin: 38px 0px 40px 8px;
+    margin: 38px 0px 39px 8px;
 }
 
 .logo_info {
@@ -233,23 +227,31 @@ ul {
     width: 66%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 40px 0px 40px;
     height: 625px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heb_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .container_heb ul {
     display: flex;
-    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .container_heb li {
     border: 5px solid;
     border-radius: 20px;
     border-color: white;
-    margin: 15px;
     overflow: hidden;
     width: 33%;
-    height: 190px;
+    height: 199px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     cursor: pointer;
@@ -282,11 +284,7 @@ h4 {
 }
 
 .container_heb h1 {
-    margin: 42px 0px 8px 15px;
-}
-
-h3 {
-    margin: 35px 0px 40px 15px;
+    margin-top: 42px;
 }
 
 .star_blue {
@@ -297,20 +295,27 @@ h3 {
     color: #F2F2F2;
 }
 
+.container_heb h3 {
+    margin-top: 25px;
+}
+
 /**Pop**/
 .container_pop {
     width: 31%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 40px 0px 40px;
     height: 625px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .popu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 23.74px 17px 8px 15px;
+    margin-top: 10px;
 }
 
 .container_pop li {
@@ -318,7 +323,6 @@ h3 {
     border: 5px solid;
     border-radius: 20px;
     border-color: white;
-    margin: 15px;
     overflow: hidden;
     height: 144px;
     background-color: white;
@@ -334,7 +338,7 @@ h3 {
     height: 85%;
     flex-direction: column;
     display: flex;
-    justify-content: space-evenly;
+    gap: 33px;
 }
 
 .infos_pop_star {
@@ -354,12 +358,20 @@ h3 {
 }
 
 /**Activités**/
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.activites {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
 
 .list_act {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 18px;
+    gap: 43px;
     margin-bottom: 60px;
 }
 
@@ -372,7 +384,7 @@ h3 {
     border-radius: 20px;
     border-color: white;
     overflow: hidden;
-    width: 302px;
+    width: 25%;
     height: 445px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -380,7 +392,10 @@ h3 {
 }
 
 .list_act h4 {
-    margin: 18px 36px 21px 19px;
+    display: flex;
+    height: 11%;
+    align-items: center;
+    padding-left: 19px;
 }
 
 .footer {
@@ -401,4 +416,60 @@ h3 {
 
 .footer_links li {
     margin-bottom: 12px;
+}
+
+/**Responsive**/
+
+@media screen and (max-width: 992px) {
+/**Main section**/  
+    body {
+        padding: 0px 70px;
+    }
+    .section_main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container_heb {
+        width: 100%;
+    }
+
+    .container_pop {
+        width: 100%;
+        height: 278px;
+    }
+
+    .container_pop ul {
+        flex-direction: row;
+        gap: 26px;
+    }
+
+    .container_pop li {
+        width: 33%;
+    }
+
+    .popu {
+        margin-top: 12px;
+    }
+/**Activ**/
+    .list_act {
+        gap: 50px;
+    }
+
+    .list_act li {
+        height: 267px;
+    }
+
+    .list_act img {
+        height: 211px;
+    }
+
+    .list_act h4 {
+        height: 17%;
+        width: 90%;
+    }
+
+    .activites h1 {
+        margin-left: 9px;
+    }
 }
