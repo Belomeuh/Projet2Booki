@@ -418,13 +418,29 @@ h4 {
     margin-bottom: 12px;
 }
 
+.footer_links a:hover {
+    color: #0065FC;
+}
+
 /**Responsive**/
 
-@media screen and (max-width: 992px) {
-/**Main section**/  
+@media screen and (max-width: 991px) {
     body {
         padding: 0px 70px;
     }
+
+    .filters {
+        gap: 15px;
+    }
+    
+    .filters li {
+        padding-right: 13px;
+    }
+
+    .filters ul {
+        gap: 20px;
+    }
+
     .section_main {
         flex-direction: column;
         gap: 50px;
@@ -472,4 +488,8 @@ h4 {
     .activites h1 {
         margin-left: 9px;
     }
+}
+
+@media screen and (max-width:767px) {
+    
 }
