@@ -155,8 +155,9 @@ p {
     gap: 25px;
 }
 
-h2 {
+.title {
     font-size: 18px;
+    font-weight: 700;
 }
 
 ul {
@@ -169,7 +170,7 @@ ul {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     font-size: 17px;
-    height: 45px;
+    height: 50px;
     display: flex;
     align-items: center;
     padding: 0px 19px 0px 10px;
@@ -222,16 +223,20 @@ ul {
     justify-content: space-between;
 }
 
+h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
 /**Heb**/
 .container_heb {
     width: 66%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 0px 40px 0px 40px;
-    height: 625px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 23px;
 }
 
 .heb_content {
@@ -262,7 +267,7 @@ ul {
     height: 55%;
 }
 
-h4 {
+h3 {
     margin: 0;
     font-size: 16px;
 }
@@ -283,7 +288,6 @@ h4 {
     font-size: 14px;
 }
 
-
 .star_blue {
     color: #0065FC;
 }
@@ -292,16 +296,8 @@ h4 {
     color: #F2F2F2;
 }
 
-.container_heb h3 {
-    margin-top: 32px;
-}
-
-h3 {
-    font-size: 22px;
-}
-
-h5 {
-    font-size: 18px;
+.container_heb .title {
+    margin-top: 17px;
 }
 
 /**Pop**/
@@ -309,18 +305,16 @@ h5 {
     width: 31%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 0px 40px 0px 40px;
-    height: 625px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 26px;
 }
 
 .popu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 10px;
 }
 
 .container_pop li {
@@ -340,7 +334,6 @@ h5 {
 }
 
 .container_pop ul {
-    height: 85%;
     flex-direction: column;
     display: flex;
     gap: 33px;
@@ -367,7 +360,7 @@ h5 {
 .content {
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 60px;
 }
 .activites {
     display: flex;
@@ -397,7 +390,7 @@ h5 {
     cursor: pointer;
 }
 
-.list_act h4 {
+.list_act h3 {
     display: flex;
     height: 11%;
     align-items: center;
@@ -409,7 +402,7 @@ h5 {
     height: 225px;
     display: flex;
     padding-left: 70px;
-    padding-top: 27px;
+    padding-top: 45px;
 }
 
 .footer_container {
@@ -470,9 +463,6 @@ h5 {
         width: 33%;
     }
 
-    .popu {
-        margin-top: 12px;
-    }
 /**Activ**/
     .list_act {
         gap: 50px;
@@ -486,9 +476,9 @@ h5 {
         height: 211px;
     }
 
-    .list_act h4 {
+    .list_act h3 {
         height: 17%;
-        width: 90%;
+        width: 85%;
     }
 
     .activites h1 {
@@ -532,6 +522,9 @@ h5 {
         margin-top: 12px;
     }
    
+    .container_research input[type='search'] {
+        width: 100%;
+    }
     .button_desk {
         display: none;
     }
@@ -563,28 +556,32 @@ h5 {
     }
 
     .filters ul {
-        gap: 10px;
+        gap: 11px;
     }
 
     .filters li {
-        width: 162px;
+        width: 48%;
+        font-size: 11px;
+        padding: 0;
     }
-
+    .info {
+        padding : 0px 20px;
+    }
     .section_main {
         flex-direction: column-reverse;
         gap: 0px;
     }
 
     .container_pop {
-        padding: 0px 20px;
-        height: 563px;
+        padding: 28px 20px 47px 20px;
+        height: 100%;
         border-radius: 0px;
-        gap: 0px;
+        gap: 26px;
     }
 
     .container_pop ul {
         flex-direction: column;
-        gap: 15px;
+        gap: 11px;
     }
 
     .container_pop li {
@@ -596,11 +593,10 @@ h5 {
     }
 
     .container_heb {
-        padding: 0px 20px;
+        padding: 19px 20px 0px 20px;
         width: 100%;
         background-color: white;
-        height: 1430px;
-        gap: 0px;
+        gap: 12px;
     }
 
     .container_heb ul {
@@ -612,12 +608,16 @@ h5 {
         width: 100%;
     }
 
+    .container_heb .title {
+        display: none;
+    }
+
     .heb_content {
         gap: 15px;
     }
     
     .content {
-        gap: 33px;
+        gap: 105px;
     }
 
     .activites {
@@ -630,16 +630,20 @@ h5 {
 
     .list_act li {
         width: 100%;
-        height: 200px;
+        height: 190px;
     }
 
     .list_act img {
         height: 141px;
     }
 
+    .list_act h3 {
+        height: 23%;
+    }
     .footer {
         flex-direction: column;
         height: 100%;
         padding-left: 30px;
+        gap: 40px;
     }
 }
