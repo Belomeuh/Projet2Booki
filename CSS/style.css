@@ -233,7 +233,7 @@ h2 {
     width: 66%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 23px;
@@ -305,7 +305,7 @@ h3 {
     width: 31%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -521,7 +521,11 @@ h3 {
         padding: 0px 20px;
         margin-top: 12px;
     }
-   
+    
+    .container_research {
+        width: 100%;
+    }
+    
     .container_research input[type='search'] {
         width: 100%;
     }
